@@ -1,0 +1,28 @@
+body.admin-standalone {
+  background-color: #f4f7f5;
+  background-image: none;
+}
+
+body.admin-standalone > .top,
+body.admin-standalone > footer,
+body.admin-standalone #app > .view:not(#adminView),
+body.admin-standalone #cartDrawer,
+body.admin-standalone #shade {
+  display: none !important;
+}
+
+body.admin-standalone #app {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 22px clamp(16px, 3vw, 40px) 48px;
+}
+
+body.admin-standalone #adminView.view:not(.hidden) {
+  display: block;
+  min-height: 100vh;
+}
+
+body.admin-standalone #adminPanel > .section-head {
+  margin-top: 0;
+}
